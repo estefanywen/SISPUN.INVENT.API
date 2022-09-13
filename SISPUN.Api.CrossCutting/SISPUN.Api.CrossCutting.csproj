@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SISPUN.Api.DataAccess\SISPUN.Api.DataAccess.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Minedu.Comun.Data">
+      <HintPath>..\Minedu.Libs\Minedu.Comun.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Minedu.Comun.IData">
+      <HintPath>..\Minedu.Libs\Minedu.Comun.IData.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
